@@ -32,20 +32,39 @@ body {
   padding-right: 40px;
   
 }
+
+
 ul {
   padding-top:0px;
   margin-top:0px;
 }
 li {
   padding-bottom:40px;
-}
-
-li:hover {
-  color:blue;
+  color:whitesmoke;
   transition: color 1s ease-out;
   -webkit-transition: color 1s ease-out;
   -moz-transition: color 1s ease-out;
   -o-transition: color 1s ease-out;
+}
+
+.center {
+  display:block;
+  margin:auto;
+  text-align:center;
+}
+
+.toppy {
+  margin-top:20px;
+}
+
+.bluey {
+  margin-top:0px;
+}
+.bluey:hover {
+  color:blue;
+}
+li:hover {
+  color:blue;
 }
 .poster {
 
@@ -56,9 +75,13 @@ img {
 }
 
 .text {
+  color:whitesmoke;
   padding-left:80px;
   font-size:36px;
-  
+  transition: color 1s ease-in-out;
+  -webkit-transition: color 1s ease-in-out;
+  -moz-transition: color 1s ease-in-out;
+  -o-transition: color 1s ease-in-out;
 }
 
 section:not(.first) {
