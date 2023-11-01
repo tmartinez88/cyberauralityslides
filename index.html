@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet">
+    <title>Cyber Aurality: Sound, Performance, and Space on the World Wide Web</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="contextHandler.js"></script>
+  </head>
+  <body>
+    <!--intro slide -->
+    <section class="panel">
+      <h1 style="text-align: center; cursor:pointer;" onclick="startSound()">Cyber Aurality: Sound, Performance, and Space<br> on the World Wide Web</h1>
+      <div class="container">
+        <a-scene embedded fog="type: linear; color:black; near: 4; far:30">
+          <a-sky></a-sky>
+          <a-assets>
+            <a-asset-item id="flower" src="https://cdn.glitch.global/63b3ef8d-96df-4033-b520-2af2d04ea2e1/flower.glb?v=1679533009185"></a-asset-item>
+          </a-assets>
+          <a-entity position="0 0 0" animation="property:rotation; to: 0 360 0; loop: true; dur: 6000; easing:linear">
+          </a-entity>
+          <a-entity position="0 0 -3" scale="7 7 7" gltf-model="#flower" sound="src: url(https://cdn.glitch.global/5a1de797-b0c3-4c78-a06b-c9254bc97c34/restaurantSound.mp3?v=1680967807992); autoplay: true; loop:true" animation="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing:linear"></a-entity>
+          <a-entity id ="sourcy" position="0 0 0" scale="7 7 7" gltf-model="#flower" sound="src: url(https://cdn.glitch.global/5a1de797-b0c3-4c78-a06b-c9254bc97c34/mountainSouond.mp3?v=1680967804394); autoplay: true; loop:true" animation="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing:linear"></a-entity>
+          <a-entity position="0 0 0" scale="7 7 7" gltf-model="#flower" sound="src: url(https://cdn.glitch.global/5a1de797-b0c3-4c78-a06b-c9254bc97c34/gateOpening.mp3?v=1680968913536); autoplay: true; loop:true" animation="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing:linear"></a-entity>
+          <a-entity light="type: point; intensity: 0.75; distance: 40; decay: 2 color: blue;" position="1 3 1"></a-entity>
+          <a-plane scale="100 100 100" position="0 0 0" rotation="-90 0 0" width="4" height="4" color="blue"></a-plane>
+        </a-scene>
+      </div>
+    </section>
+    <!--About Me-->
+    <section class="panel">
+      <h1>About Me</h1>
+        <div class="container">
+          <div class="poster">
+            <iframe class="framey" src="https://behavioralist.vercel.app/" width="700" height="600" style="object-position: 0% 0%;"></iframe>
+          </div>
+          <div class="text">
+            <ul>
+              <li>artist / programmer</li>
+              <li>the use of web development tools for music composition, hybridizing techniques</li>
+              <li>how the world of music(s) overlap with spatial computing, networked environments</li>
+              <li><a href="https://wwww.thomasjohnmartinez.com/">My Website</a></li>
+              <li>started this research around 2020, Sonic Arts MFA, Brooklyn College</li>
+              <li>working with artists like Toni Dove, Kristin Lucas, Jacolby Satterwhite, Claudia Hart, LaJune McMillian</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <!--TOC-->
+    <section class="panel">
+        <div class="container" >
+          <div class="text" style="width:100%; text-align:center;">
+            <h1 style="text-align: center;">Table of Contents</h1>
+            <ul style="list-style-type: none;">
+              <li>Early Telematics</li>
+              <li>The Popularization of Cyberspace</li>
+              <li>Virtual Sound Performance</li>
+              <li>Technical Details</li>
+            </ul>
+            <img src="/cyberspace.gif">
+          </div>
+        </div>
+    </section>
+    <!--Leopold Stokowski-->
+    <section class="panel">
+      <h1>Leopold Stokowski</h1>
+      <div class="container">
+        <div class="poster">
+          <img src="/stokowski.jpg">
+        </div>
+        <div class="text">
+          <ul>
+            <li>Conductor of the Philadelphia Orchestra starting in 1912</li>
+            <li>showman, adventurous programmer of new music, and pioneer of new orchestral </li>
+            <li>Lover of Music Technology and Avid Experimenter</li>
+            <li><span class="smallerText">Lover of Music Technology and Avid Experimenter</span></li>
+          </ul>
+        </div>
+      </div> 
+    </section>
+    <!--City Links -->
+    <section class="panel">
+      <h1>Maryanne Amacher - City Links (1967 - 1980)</h1>
+        <div class="container">
+          <div class="poster">
+            <img src="/citylinks.jpg">
+          </div>
+          <div class="text">
+            <ul>
+              <li>connecting </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <!--Experiments in Art and Technology-->
+    <section class="panel">
+      <h1>Experiments in Art and Technology</h1>
+      <div class="container">
+        <div class="poster">
+          <img src="/stokowski.jpg">
+        </div>
+        <div class="text">
+          <ul>
+            <li>Headed by Billy Kluver (1960-??)</li>
+            <li>Formalized Working Relationships between artists and engineers</li>
+            <li>Yvonne Rainer, Deborah Hay, Robert Rauschenberg, Andy Warhol, John Cage, Merce Cunningham</li>
+            <li>FM Transmitters, Photocells, Sonar Sensors for Motion Detection</li>
+            <li>9 Evenings(1966) - </li>
+          </ul>
+        </div>
+      </div> 
+    </section>
+    </section>
+    <!--A Sound That Never Was Section-->
+    <section class="panel">
+      <h1>A Sound That Never Was</h1>
+      <div class="container">
+        <div class="poster">
+          <iframe allow src="https://asoundthatneverwas.net/" width="600" height="400"></iframe>
+        </div>
+        <div class="text">
+          <ul>
+            <li>looks like its not active at the moment, we could have a long conversation about this 😅</li>
+            <li>Uses seismographic and weather data to change sound parameters</li>
+            <li>Uses the spatial parameters of distant sites to be linked</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--AOM Section-->
+    <section class="panel">
+      <h1>Avatar Orchestra Metaverse</h1>
+      <div class="container">
+        <div class="poster">
+          <img src="aomqa.png">
+        </div>
+        <div class="text">
+          <ul>
+            <li>Active from 2003-Current</li>
+            <li>Active from 2003-Current</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--Travis Scott Section-->
+    <section class="panel">
+      <h1>Travis Scott in Fortnite</h1>
+        <div class="container">
+          <div class="poster">
+            <iframe width="640px" height="315" src="https://www.youtube.com/embed/wYeFAlVC8qU?si=mdzbBqMHoIsQTR-j&amp;start=262" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="text">
+            <ul>
+              <li>Only could have happened in a Virtual Environment</li>
+              <li>200 Million Views</li>
+              <li>Built within a platform with a built-in community</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <!--Claudia Hart Section-->
+    <section class="panel">
+      <h1>Claudia Hart</h1>
+      <div class="container">
+        <div class="poster">
+          <iframe src="https://player.vimeo.com/video/501053235?h=b22dc51c53&color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/501053235">Welcome to the Doll&#039;s House, 2020</a> from <a href="https://vimeo.com/claudiahart">Claudia Hart</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+        <div class="text">
+          <ul>
+            <li>Mozilla Hubs</li>
+            <li>Makes </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--Yo Yo Section https://www.culturehub.org/remote-access-glitchrealm-->
+    <section class="panel">
+      <h1>Remote Access: GlitchRealm</h1>
+      <div class="container">
+        <div class="poster">
+          <iframe width="700" height="500" src="https://www.culturehub.org/remote-access-glitchrealm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="text">
+          <ul>
+            <li>Mozilla Hubs</li>
+            <li>Makes </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--HTML MARKUP FOR QUIK Spatial Audio-->
+    <section class="panel">
+      <h1>Building a 3D Scene</h1>
+      <!-- Copy and Paste Me -->
+    <div class="container">
+      <a-scene embedded fog="type: linear; color:black; near: 4; far:30">
+        <a-sky></a-sky>
+        <a-assets>
+          <a-asset-item id="flower" src="https://cdn.glitch.global/63b3ef8d-96df-4033-b520-2af2d04ea2e1/flower.glb?v=1679533009185"></a-asset-item>
+        </a-assets>
+        <a-entity position="0 0 0" animation="property:rotation; to: 0 360 0; loop: true; dur: 6000; easing:linear">
+        </a-entity>
+        <a-entity position="0 0 -3" scale="7 7 7" gltf-model="#flower" sound="src: url(https://cdn.glitch.global/5a1de797-b0c3-4c78-a06b-c9254bc97c34/restaurantSound.mp3?v=1680967807992); autoplay: true; loop:true" animation="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing:linear"></a-entity>
+        <a-entity id ="sourcy" position="0 0 0" scale="7 7 7" gltf-model="#flower" sound="src: url(https://cdn.glitch.global/5a1de797-b0c3-4c78-a06b-c9254bc97c34/mountainSouond.mp3?v=1680967804394); autoplay: true; loop:true" animation="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing:linear"></a-entity>
+        <a-entity position="0 0 0" scale="7 7 7" gltf-model="#flower" sound="src: url(https://cdn.glitch.global/5a1de797-b0c3-4c78-a06b-c9254bc97c34/gateOpening.mp3?v=1680968913536); autoplay: true; loop:true" animation="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing:linear"></a-entity>
+        <a-entity light="type: point; intensity: 0.75; distance: 40; decay: 2 color: blue;" position="1 3 1"></a-entity>
+        <a-plane scale="100 100 100" position="0 0 0" rotation="-90 0 0" width="4" height="4" color="blue"></a-plane>
+      </a-scene>     
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
