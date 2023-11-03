@@ -95,3 +95,8 @@ section:not(.first) {
   transform: scale(0.8);
 } 
 
+.credits {
+  padding-bottom: 0px;
+  font-size: 38px;
+}
+
