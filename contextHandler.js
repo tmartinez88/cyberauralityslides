@@ -12,13 +12,11 @@ window.onload = (event) => {
 function startSound() {
   if (!playing) {
     context.resume();
-    //button.innerHTML = "Stop";
     playing = true;
     console.log('hello');
   }
   else {
     context.suspend();
-    //button.innerHTML = "Start";
     playing = false;
   }
 }
